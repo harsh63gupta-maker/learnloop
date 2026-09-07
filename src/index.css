@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* Frosted Glass Theme Base & Utilities */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0A0F1E;
+  color: #F8FAFC;
+  min-height: 100vh;
+}
+
+.mesh-gradient {
+  background: radial-gradient(circle at 15% 15%, rgba(49, 46, 129, 0.45) 0%, transparent 45%),
+              radial-gradient(circle at 85% 25%, rgba(30, 64, 175, 0.4) 0%, transparent 45%),
+              radial-gradient(circle at 50% 80%, rgba(30, 27, 75, 0.5) 0%, transparent 60%),
+              radial-gradient(circle at 75% 75%, rgba(14, 116, 144, 0.25) 0%, transparent 40%),
+              #0A0F1E;
+  background-attachment: fixed;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.glass-card-hover {
+  transition: all 0.2s ease;
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.glass-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.4);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.4);
+}
+
+/* Custom Markdown & Typography Styling for LearnLoop */
+.markdown-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.markdown-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #f1f5f9;
+  line-height: 1.35;
+}
+
+.markdown-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.85rem;
+  margin-bottom: 0.4rem;
+  color: #e2e8f0;
+}
+
+.markdown-content p {
+  margin-bottom: 0.85rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #cbd5e1;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+  color: #cbd5e1;
+}
+
+.markdown-content li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.markdown-content strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #e2e8f0;
+}
+
+.markdown-content pre {
+  background-color: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #93c5fd;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  margin: 1rem 0;
+}
+
+.markdown-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #60a5fa;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
